@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="https://i.imgur.com/RmK70Fb.png" />
+  <title>Missão Espiritual | Escola Adventista Foz do Iguaçu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-escuro: #003366;
+      --azul-claro: #0078AE;
+      --amarelo: #FECB00;
+      --laranja: #CE8720;
+      --branco: #FFFFFF;
+      --texto: #333333;
+      --sombra: rgba(0, 0, 0, 0.1);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body {
+      display: flex; flex-direction: column;
+      font-family: 'Poppins', sans-serif;
+      color: var(--texto); background: var(--branco);
+      animation: fadeIn 1s ease-in;
+    }
+
+    header {
+      background: var(--azul-escuro); color: var(--branco);
+      padding: 2rem 1rem; text-align: center;
+      box-shadow: 0 4px 8px var(--sombra);
+    }
+    header h1 {
+      margin: 0; font-size: 2.8rem; letter-spacing: 1px;
+      animation: slideInDown 1s ease-out;
+    }
+    header p {
+      margin: 0.5rem 0; font-size: 1.2rem; opacity: 0.9;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    main {
+      flex: 1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 2rem 1rem;
+    }
+    section {
+      max-width: 800px; width: 100%; text-align: center;
+    }
+
+    .mission-text {
+      background: var(--amarelo); padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px var(--sombra);
+      line-height: 1.8;
+      animation: slideInUp 1s ease-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .mission-text:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px var(--sombra);
+    }
+    .mission-text em {
+      color: var(--azul-claro);
+      font-weight: 600;
+    }
+
+    .cta {
+      display: flex; flex-wrap: wrap;
+      gap: 1rem; justify-content: center;
+      margin-top: 2rem;
+    }
+    .cta a {
+      display: inline-block; padding: 1rem 2rem;
+      color: var(--branco); text-decoration: none;
+      border-radius: 8px; font-size: 1.1rem; font-weight: 600;
+      transition: background 0.3s ease,
+                  transform 0.3s ease,
+                  box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px var(--sombra);
+    }
+    .cta a:nth-child(1) {
+      background: var(--laranja);
+    }
+    .cta a:nth-child(1):hover {
+      background: #a55f10;
+    }
+    .cta a.btn-insta {
+      background: var(--azul-claro);
+    }
+    .cta a.btn-insta:hover {
+      background: #005f88;
+    }
+
+    footer {
+      background: var(--azul-escuro); color: var(--branco);
+      text-align: center; padding: 1rem;
+      font-size: 0.9rem;
+      box-shadow: 0 -4px 8px var(--sombra);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 } to { opacity: 1 }
+    }
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+    @keyframes slideInUp {
+      from { transform: translateY(50px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .mission-text { padding: 1.5rem; }
+      .cta a { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Missão Espiritual</h1>
+    <p>Escola Adventista de Foz do Iguaçu | Educação Integral e Fé</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="mission-text">
+        <p><strong>Somos uma comunidade escolar que forma estudantes de corpo, mente e espírito.</strong> Aqui, oferecemos educação de excelência – da Educação Infantil ao Fundamental – com projetos interculturais e compromisso ético.</p>
+        <p><strong>Por meio do <em>Marco Zero</em></strong>, nosso grupo de adolescentes, cultivamos a comunhão com Cristo, criando um “lugar de recomeços”: encontros mensais, momentos de louvor, oração e renovação espiritual.</p>
+        <p><strong>Queremos ser um farol de luz</strong>, guiando nossos alunos a descobrirem seu propósito em Deus e a viverem uma vida transformada, ancorada na esperança de “Até que Ele venha”. Você é bem-vindo para fazer parte desta jornada.</p>
+      </div>
+
+      <div class="cta">
+        <a href="https://linktr.ee/foz.aop" target="_blank">
+          Nossos Links
+        </a>
+        <a href="https://www.instagram.com/marcozero.foz" target="_blank" class="btn-insta">
+          Instagram Marco Zero
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Escola Adventista de Foz do Iguaçu. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
